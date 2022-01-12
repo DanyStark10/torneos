@@ -1,0 +1,37 @@
+<h1 class="text-center">Torneos de futbol y basquetbol</h1>
+<div class="card col-5">
+    <img src="./assets/fut_basquet.jpg">     
+    <div class="card-header">    
+        Iniciar sesion
+    </div>
+    <div class="card-body">
+        <form ngNativeValidate >
+
+
+            <div class="mb-3">
+                <label for="" class="form-label">Correo electronico</label>
+                <input required type="text" class="form-control" #user id=""
+                    aria-describedby="helpId" placeholder="Escribe el usuario">
+
+            </div>
+
+            <div class="mb-3">
+                <label for="" class="form-label">Contraseña</label>
+                <input required type="password" class="form-control" #password id=""
+                    aria-describedby="helpId" placeholder="Escribe la Contraseña">
+
+            </div>
+           
+           
+            <div class="btn-group" role="group" aria-label="">
+                <button type="button" (click)="enviarDatos(user.value,password.value)" class="btn btn-outline-success">Iniciar sesion</button>
+                <!-- <button type="button" routerLink="/listar-torneo/" class="btn btn-primary">Cancelar</button> -->
+                <br><br>
+            </div>
+            <br><br>
+            <a routerLink="/agregar-usuario/" class="link">Registrar nuevo usuario</a>
+
+        </form>
+    </div>
+
+</div>
